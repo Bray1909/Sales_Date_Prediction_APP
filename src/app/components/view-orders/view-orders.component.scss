@@ -1,0 +1,87 @@
+/* Contenedor principal de la tabla */
+.table-container {
+    margin: 20px;
+    padding: 0; /* quitamos el padding para que el header quede pegado */
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Encabezado tipo banner rojo */
+  .header-box {
+    background-color: #b32c31;
+    color: white;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Texto del encabezado */
+  .header-text {
+    font-size: 18px;
+    margin-left: 10px;
+  }
+  
+  /* Tabla dentro del contenedor */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+  }
+  
+  /* Cabeceras de la tabla */
+  th.mat-header-cell {
+    background-color: #e0e0e0;
+    color: black !important;
+    font-weight: bold;
+  }
+  
+  /* Celdas */
+  th, td {
+    padding: 15px 20px;
+    text-align: left;
+    vertical-align: middle;
+  }
+  
+  /* Filas alternadas */
+  tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+  
+  /* Paginador */
+  mat-paginator {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Elimina este margen innecesario que estaba causando que la tabla se baje mucho */
+  mat-table {
+    width: 100%;
+    margin-top: 0;
+  }
+  
+
+  .footer-action {
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px 20px;
+  }
+  
+  .close-link {
+    color: #b32c31;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .close-link:hover {
+    color: #7a1f24;
+  }
+  
